@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scene Perkenalan Diri</title>
+
+  <script src="https://aframe.io/releases/1.8.0/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+
+    <!-- LANGIT -->
+    <a-sky color="#B9E7FF"></a-sky>
+
+    <!-- LANTAI -->
+    <a-plane
+      position="0 0 0"
+      rotation="-90 0 0"
+      width="20"
+      height="20"
+      color="#91C788">
+    </a-plane>
+
+    <!-- KOTAK -->
+    <a-box
+      position="-2 1 -4"
+      width="1.5"
+      height="1.5"
+      depth="1.5"
+      color="#FF7043"
+      animation="property: rotation; to: 0 360 0; loop: true; dur: 6000; easing: linear">
+    </a-box>
+
+    <!-- BOLA -->
+    <a-sphere
+      position="0 1.2 -4"
+      radius="0.8"
+      color="#FFD54F">
+    </a-sphere>
+
+    <!-- TABUNG -->
+    <a-cylinder
+      position="2 0.8 -4"
+      radius="0.5"
+      height="1.6"
+      color="#42A5F5">
+    </a-cylinder>
+
+    <!-- KERUCUT -->
+    <a-cone
+      position="0 0.6 -6"
+      radius-bottom="0.7"
+      radius-top="0"
+      height="1.2"
+      color="#AB47BC">
+    </a-cone>
+
+    <!-- TEKS NAMA DAN NIM -->
+    <a-text
+      value="OPPIANTI ULANDARI"
+      position="0 2.5 -4"
+      align="center"
+      color="#222222"
+      width="6">
+    </a-text>
+
+    <a-text
+      value="2309020328"
+      position="0 2.1 -4"
+      align="center"
+      color="#222222"
+      width="5">
+    </a-text>
+
+    <!-- PENCAHAYAAN -->
+    <a-light
+      type="ambient"
+      color="#FFFFFF"
+      intensity="1">
+    </a-light>
+
+    <!-- KAMERA -->
+    <a-entity
+      camera
+      position="0 1.6 0"
+      look-controls>
+    </a-entity>
+
+  </a-scene>
+</body>
+</html>
